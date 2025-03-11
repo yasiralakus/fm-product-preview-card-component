@@ -75,6 +75,7 @@ p, h1, h2, h3, h4, h5, h6 {
         color: #6C7289;
         font-weight: normal;
         margin-bottom: 24px;
+        height: 14px;
     }
     > h1 {
         font-size: 32px;
@@ -88,6 +89,7 @@ p, h1, h2, h3, h4, h5, h6 {
         line-height: 160%;
         color: #6C7289;
         margin-bottom: 32px;
+        height: 88px;
     }
     > button {
         background-color: #3D8168;
@@ -137,4 +139,27 @@ p, h1, h2, h3, h4, h5, h6 {
         text-decoration: line-through;
         color: #6C7289;
     }
+}
+
+@media (width < 640px) {
+
+    .full-page {
+        padding: 12px;
+    }
+
+    .card-box {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .img-for-desktop {
+        display: none;
+    }
+
+    .img-for-mobile {
+        display: block;
+        min-height: 342px;
+        object-fit: cover;
+    }
+    
 }
